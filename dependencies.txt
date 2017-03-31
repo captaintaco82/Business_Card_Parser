@@ -1,5 +1,0 @@
-Python 3.6 - https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
-gcc - "sudo yum install gcc"
-
-
-sudo systemctl docker start
