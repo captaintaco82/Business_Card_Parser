@@ -30,5 +30,4 @@ class ContactInfo():
         print("Email: %s" % str(self.email))
     
     def NormalizePhoneNumber(self):
-        #TODO: Fix
         return self.number
