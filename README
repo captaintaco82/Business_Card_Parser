@@ -1,0 +1,14 @@
+** Business Card OCR Parser Instructions **
+
+Python 2.7 or later must be installed for this program to run.
+
+To execute the parser run the following commands:
+    > cd Business_Card_Parser/        # Navigate to the directory this project was cloned to.
+    > ./run.sh
+
+To update the input for the program:
+    Modify the contents of the 'input.txt' file.
+
+Troubleshooting:
+    If you cannot execute the "./run.sh" command, try updating the permissions as follows and then run again:
+    > chmod 755 run.sh
