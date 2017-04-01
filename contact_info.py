@@ -18,7 +18,7 @@ class ContactInfo():
         return self.name
     
     def getPhoneNumber(self):
-        return self.NormalizePhoneNumber()
+        return self.normalizePhoneNumber()
     
     def getEmailAddress(self):
         return self.email
@@ -31,7 +31,7 @@ class ContactInfo():
         print("Phone: %s" % str(self.getPhoneNumber()))
         print("Email: %s" % str(self.email))
     
-    def NormalizePhoneNumber(self):
+    def normalizePhoneNumber(self):
         """
         strips out any non nummeric charaters from the contact phone number
         """
