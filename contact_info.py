@@ -1,3 +1,5 @@
+import re
+
 class ContactInfo():
     """
     Describes properties of a contact
@@ -16,7 +18,7 @@ class ContactInfo():
         return self.name
     
     def getPhoneNumber(self):
-        return self.number
+        return self.NormalizePhoneNumber()
     
     def getEmailAddress(self):
         return self.email
@@ -26,8 +28,11 @@ class ContactInfo():
         Prints the current properties of the contact in the format described by the requirements.
         """
         print("Name: %s" % str(self.name))
-        print("Phone: %s" % str(self.number))
+        print("Phone: %s" % str(self.getPhoneNumber()))
         print("Email: %s" % str(self.email))
     
     def NormalizePhoneNumber(self):
-        return self.number
+        """
+        strips out any non nummeric charaters from the contact phone number
+        """
+        return re.sub('[^0-9]','', self.number)
